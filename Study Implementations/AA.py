@@ -19,15 +19,15 @@ def insertion_sort(arr):
 testM_array = [12, 13, 14, 78, 65, 90, 120]
 
 def merge_sort(testM_array):
-    if len(testM_array) > 1:
-        mid = len(testM_array) // 2
-        L = testM_array[:mid]
-        R = testM_array[mid:]
+    if len(testM_array) > 1: # ensure that the elements are greater than 1
+        mid = len(testM_array) // 2 # divide the array into two halves
+        L = testM_array[:mid] # left half denoted by L
+        R = testM_array[mid:] # right half denoted by R 
 
         merge_sort(L)
         merge_sort(R)
 
-        i = j = k = 0
+        i = j = k = 0 # initalizing all the variables to 0; pretty creative way of doing such
 
         while i < len(L) and j < len(R):
             if L[i] < R[j]:
