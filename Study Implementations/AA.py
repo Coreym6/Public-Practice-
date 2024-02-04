@@ -54,6 +54,9 @@ merge_sort(testM_array)
 
 # heap_sort
 
+#bubble sort is essentially grouping the selected elements in groups of two for example
+
+
 
 # binary_search
 
