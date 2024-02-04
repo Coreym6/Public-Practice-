@@ -18,6 +18,37 @@ def insertion_sort(arr):
 
 testM_array = [12, 13, 14, 78, 65, 90, 120]
 
+def merge_sort(testM_array):
+    if len(testM_array) > 1:
+        mid = len(testM_array) // 2
+        L = testM_array[:mid]
+        R = testM_array[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                testM_array[k] = L[i]
+                i += 1
+            else:
+                testM_array[k] = R[j]
+                j += 1
+            k += 1
+
+        while i < len(L):
+            testM_array[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < len(R):
+            testM_array[k] = R[j]
+            j += 1
+            k += 1
+    return testM_array
+
 # quick_sort
 
 
