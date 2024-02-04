@@ -62,3 +62,22 @@ merge_sort(testM_array)
 
 
 # selection_sort
+select_array = [45, 66, 77, 89, 90, 12, 13 ,14, 16, 17]
+
+for i in range(len(select_array)): 
+      
+    # Find the minimum element in remaining  
+    # unsorted array 
+    min_idx = i 
+    for j in range(i+1, len(A)): 
+        if select_array[min_idx] > select_array[j]: 
+            min_idx = j 
+              
+    # Swap the found minimum element with  
+    # the first element         
+    select_array[i], select_array[min_idx] = select_array[min_idx], select_array[i] 
+  
+# Driver code to test above 
+print ("Sorted array") 
+for i in range(len(A)): 
+    print("%d" %select_array[i],end=" , ")  
