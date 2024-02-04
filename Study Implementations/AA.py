@@ -79,5 +79,5 @@ for i in range(len(select_array)):
   
 # Driver code to test above 
 print ("Sorted array") 
-for i in range(len(A)): 
+for i in range(len(select_array)): 
     print("%d" %select_array[i],end=" , ")  
