@@ -48,7 +48,7 @@ def merge_sort(testM_array):
             j += 1
             k += 1
     return testM_array
-
+merge_sort(testM_array)
 # quick_sort
 
 
